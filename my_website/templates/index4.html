@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- <div id="container">
+  <svg id="svgText" width="359" height="85" xmlns="http://www.w3.org/2000/svg">
+    <filter id="filter">
+      <feTurbulence type="turbulence" baseFrequency="0.015 0.1" numOctaves="1" seed="1"/>
+      <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="9" xChannelSelector="R"       yChannelSelector="B"/>
+    </filter>
+  <text font-family="Arvo, sans-serif" font-size="60" id="svg_1" y="63" x="13.828125" stroke-width="0" filter="url(#filter)" stroke="#fff" fill="#ffffff">Turbulence</text>
+</svg>
+</div> -->
+
+
+    <h1>Python Programmer</h1>
+
+    <br>
+    <h2><a href="{% url 'game' %}">Stori - A Python Game</a></h2>
+    <h5>A game written in Python using the PyGame module</h5>
+    <br>
+    <br>
+    <h2><a href="{% url 'projects' %}">Projects</a></h2>
+    <h5>Jonathan's uploaded works</h5>
+    <br>
+    <br>
+    <h2><a href="{% url 'about' %}">About Jonathan</a></h2>
+    <h5>Contact info and background</h5>
+    <br>
+    <br>
+
+
+{% endblock %}

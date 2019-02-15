@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jonathan Overy</title>
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <link rel="stylesheet" href="{% static 'website/css/master.css'%}">
+
+
+  </head>
+  <body>
+
+    <header class="cd-header">
+  		<div class="header-wrapper">
+  			<div class="logo-wrap">
+  				<a href="#" class="hover-target"><span>Jonathan </span>Overy</a>
+  			</div>
+  			<div class="nav-but-wrap">
+  				<div class="menu-icon hover-target">
+  					<span class="menu-icon__line menu-icon__line-left"></span>
+  					<span class="menu-icon__line"></span>
+  					<span class="menu-icon__line menu-icon__line-right"></span>
+  				</div>
+  			</div>
+  		</div>
+  	</header>
+
+  	<div class="nav">
+  		<div class="nav__content">
+  			<ul class="nav__list">
+  				<li class="nav__list-item active-nav"><a href="{% url 'home' %}" class="hover-target">Home</a></li>
+  				<li class="nav__list-item"><a href="{% url 'game' %}" class="hover-target">Game</a></li>
+  				<li class="nav__list-item"><a href="{% url 'projects' %}" class="hover-target">Projects</a></li>
+  				<li class="nav__list-item"><a href="{% url 'about' %}" class="hover-target">About</a></li>
+  			</ul>
+  		</div>
+  	</div>
+
+  	<div class="section full-height over-hide">
+  		<div class="switch-wrap">
+  			<h1>Insert Info</h1>
+        <h1>Insert Info</h1>
+  			<div id="switch" class="hover-target">
+  				<div id="circle"></div>
+  			</div>
+  			<p><span>dark</span> - <span>light</span></p>
+  		</div>
+  	</div>
+
+  	<div class='cursor' id="cursor"></div>
+  	<div class='cursor2' id="cursor2"></div>
+  	<div class='cursor3' id="cursor3"></div>
+
+  <!-- Link to page
+  ================================================== -->
+
+  <a href="https://themeforest.net/user/ig_design/portfolio"      class="link-to-portfolio hover-target" target=”_blank”></a>
+
+
+
+<script src="{% static "website/js/master.js"%}" type="text/javascript" ></script>
+
+  </body>
+</html>
